@@ -274,7 +274,7 @@ var FileUploader = (function () {
             _this._onCompleteItem(item, response, xhr.status, headers);
         };
         xhr.open(item.method, item.url, true);
-        xhr.withCredentials = item.withCredentials;
+        // xhr.withCredentials = item.withCredentials;
         if (this.options.headers) {
             for (var _i = 0, _a = this.options.headers; _i < _a.length; _i++) {
                 var header = _a[_i];
